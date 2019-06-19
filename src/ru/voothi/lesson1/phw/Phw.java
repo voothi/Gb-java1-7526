@@ -4,6 +4,7 @@ public class Phw {
     public static void main(String[] args) {
         System.out.println(ex1Method(2,2,4,2));
         System.out.println(ex2Method(10,2));
+        ex3Method(0);
     }
 
     static float ex1Method(int a, int b, int c, int d) {
@@ -15,6 +16,14 @@ public class Phw {
             return true;
         } else {
             return false;
+        }
+    }
+
+    static void ex3Method(int z) {
+        if (z < 0) {
+            System.out.println("Вы передали отрицательное число");
+        } else {
+            System.out.println("Вы передали положительное число");
         }
     }
 }
