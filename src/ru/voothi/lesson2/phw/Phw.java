@@ -44,6 +44,7 @@ public class Phw {
                 arrEx3Param[i] = arrEx3Param[i] * 2;
             }
         }
+        System.out.println(Arrays.toString(arrEx3Param));
     }
 //
 //    static ex4() {
