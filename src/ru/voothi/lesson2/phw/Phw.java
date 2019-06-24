@@ -7,8 +7,10 @@ public class Phw {
 //        replacingValuesInArray();
 //        fillArrayValues();
 
-        int[] arrEx3Arg = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
-        ex3(arrEx3Arg);
+//        int[] arrEx3Arg = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+//        ex3(arrEx3Arg);
+
+        ex4();
     }
 
     static void replacingValuesInArray() {
@@ -37,8 +39,6 @@ public class Phw {
     }
 
     static void ex3(int[] arrEx3Param) {
-//        [ 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 ]
-//        int[] arr = new int[12];
         for (int i = 0; i < arrEx3Param.length; i++) {
             if (arrEx3Param[i] < 6) {
                 arrEx3Param[i] = arrEx3Param[i] * 2;
@@ -46,7 +46,7 @@ public class Phw {
         }
         System.out.println(Arrays.toString(arrEx3Param));
     }
-//
-//    static ex4() {
-//    }
+
+    static void ex4() {
+    }
 }
