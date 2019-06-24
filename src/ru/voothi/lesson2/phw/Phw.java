@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class Phw {
     public static void main(String[] args) {
 //        replacingValuesInArray();
-        fillArrayValues();
+//        fillArrayValues();
+        ex3();
     }
 
     static void replacingValuesInArray() {
@@ -24,7 +25,6 @@ public class Phw {
     static void fillArrayValues() {
         int[] arr = new int[8];
         for (int i = 0; i < arr.length; i++) {
-//            1 4 7 10 13 16 19 22
             if (i == 0) {
                 arr[i] = 1;
             } else {
@@ -33,9 +33,10 @@ public class Phw {
         }
         System.out.println(Arrays.toString(arr));
     }
-//
-//    static ex3() {
-//    }
+
+    static void ex3() {
+
+    }
 //
 //    static ex4() {
 //    }
