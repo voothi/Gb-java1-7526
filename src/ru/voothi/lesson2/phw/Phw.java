@@ -10,11 +10,11 @@ public class Phw {
 //        int[] arrEx3Arg = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
 //        ex3(arrEx3Arg);
 
-        ex4();
+        findMinAndMax();
     }
 
     static void replacingValuesInArray() {
-        int[] arr = { 1, 1, 0, 0, 1 };
+        int[] arr = {1, 1, 0, 0, 1};
         for (int i = 0; i < arr.length; i++) {
             System.out.println("До:\n Ключ " + i + " Значение " + arr[i]);
             if (arr[i] == 1) {
@@ -47,6 +47,22 @@ public class Phw {
         System.out.println(Arrays.toString(arrEx3Param));
     }
 
-    static void ex4() {
+    static void findMinAndMax() {
+        int[] arr = {3, 1, 4, 2};
+        System.out.println(Arrays.toString(arr));
+        int indexOfMax = 0;
+        int indexOfMin = 0;
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > arr[indexOfMax]) {
+                indexOfMax = i;
+            } else if (arr[i] < arr[indexOfMin]) {
+                indexOfMin = i;
+            }
+        }
+        System.out.println("Массив элементов: " + Arrays.toString(arr));
+        System.out.println("Минимальный элемент: " + arr[indexOfMin] +
+                " под индексом "+ indexOfMin);
+        System.out.println("Максимальный элемент: " + arr[indexOfMax] +
+                " под индексом " + indexOfMax);
     }
 }
