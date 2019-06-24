@@ -1,9 +1,11 @@
 package ru.voothi.lesson2.phw;
 
+import java.util.Arrays;
+
 public class Phw {
     public static void main(String[] args) {
 //        replacingValuesInArray();
-        ex2();
+        fillArrayValues();
     }
 
     static void replacingValuesInArray() {
@@ -19,7 +21,7 @@ public class Phw {
         }
     }
 
-    static void ex2() {
+    static void fillArrayValues() {
         int[] arr = new int[8];
         for (int i = 0; i < arr.length; i++) {
 //            1 4 7 10 13 16 19 22
