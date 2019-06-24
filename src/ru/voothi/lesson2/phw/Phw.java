@@ -2,7 +2,8 @@ package ru.voothi.lesson2.phw;
 
 public class Phw {
     public static void main(String[] args) {
-        replacingValuesInArray();
+//        replacingValuesInArray();
+        ex2();
     }
 
     static void replacingValuesInArray() {
@@ -18,8 +19,18 @@ public class Phw {
         }
     }
 
-//    static ex2() {
-//    }
+    static void ex2() {
+        int[] arr = new int[8];
+        for (int i = 0; i < arr.length; i++) {
+//            1 4 7 10 13 16 19 22
+            if (i == 0) {
+                arr[i] = 1;
+            } else {
+                arr[i] = arr[i - 1] + 3;
+            }
+        }
+        System.out.println(Arrays.toString(arr));
+    }
 //
 //    static ex3() {
 //    }
