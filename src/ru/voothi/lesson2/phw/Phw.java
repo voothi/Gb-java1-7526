@@ -10,7 +10,9 @@ public class Phw {
 //        int[] arrEx3Arg = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
 //        ex3(arrEx3Arg);
 
-        findMinAndMax();
+//        findMinAndMax();
+
+//        ex5();
     }
 
     static void replacingValuesInArray() {
@@ -61,8 +63,43 @@ public class Phw {
         }
         System.out.println("Массив элементов: " + Arrays.toString(arr));
         System.out.println("Минимальный элемент: " + arr[indexOfMin] +
-                " под индексом "+ indexOfMin);
+                " под индексом " + indexOfMin);
         System.out.println("Максимальный элемент: " + arr[indexOfMax] +
                 " под индексом " + indexOfMax);
+    }
+
+    static void ex5() {
+//        int[] arr0 = {1, 0, 0, 1};
+//        int[] arr1 = {0, 1, 1, 0};
+//        int[] arr2 = {0, 1, 1, 0};
+//        int[] arr3 = {1, 0, 0, 1};
+
+//        System.out.println(Arrays.toString(arr0));
+//        System.out.println(Arrays.toString(arr1));
+//        System.out.println(Arrays.toString(arr2));
+//        System.out.println(Arrays.toString(arr3));
+
+//        int[][] array = new int[2][2];
+//        int[][] array1 = {{1,2}, {3,4}};
+
+//        int ni = 4;
+//        int nj = 4;
+//        int[][] array = new int[][]{
+//
+//                {0, 0, 0, 0},
+//                {0, 0, 0, 0},
+//                {0, 0, 0, 0},
+//                {0, 0, 0, 0}
+//        };
+//
+//        for (int i = 0; i < ni; i++) {
+//            array[i][i] = 1;
+//            for (int j = nj - 1; j >= 0; j--) {
+//                array[i][j] = 1;
+//                break;
+//            }
+//            System.out.println(Arrays.toString(array[i]));
+//        }
+
     }
 }
