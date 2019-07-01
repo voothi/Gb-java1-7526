@@ -24,5 +24,16 @@ public class Main {
                 System.out.println(employeeArr1[i].getPosition());
             }
         }
+
+        System.out.println("~~~ Ex 6 ~~~");
+
+        for (int i = 0; i < employeeArr1.length; i++) {
+            if (employeeArr1[i].getAge() > 45) {
+                System.out.println(employeeArr1[i].getFullName());
+                System.out.println(employeeArr1[i].getSalary());
+                employeeArr1[i].salaryIncrease(5000);
+                System.out.println(employeeArr1[i].getSalary());
+            }
+        }
     }
 }

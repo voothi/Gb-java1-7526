@@ -34,4 +34,8 @@ public class Employee {
     public int getAge () {
         return this.age;
     }
+
+    public void salaryIncrease (int amount) {
+        this.salary += amount;
+    }
 }
