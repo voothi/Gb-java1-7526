@@ -3,11 +3,11 @@ package ru.voothi.lesson4.phw;
 public class Employee {
     private String fullName;
     private String position;
-    private int telephone;
+    private String telephone;
     private int salary;
     private int age;
 
-    Employee (String fullName, String position, int telephone, int salary, int age) {
+    Employee (String fullName, String position, String telephone, int salary, int age) {
         this.fullName = fullName;
         this.position = position;
         this.telephone = telephone;
@@ -23,12 +23,12 @@ public class Employee {
         return this.position;
     }
 
-    public int getSalary () {
-        return this.salary;
+    public String getTelephone () {
+        return this.telephone;
     }
 
-    public int getTelephone () {
-        return this.telephone;
+    public int getSalary () {
+        return this.salary;
     }
 
     public int getAge () {
