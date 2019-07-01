@@ -1,6 +1,12 @@
 package ru.voothi.lesson4.phw;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Employee {
+
+    private static final AtomicInteger idGenerator = new AtomicInteger(1000);
+    private final Integer id;
+
+
     private String fullName;
     private String position;
     private String telephone;
@@ -8,6 +14,8 @@ public class Employee {
     private int age;
 
     Employee (String fullName, String position, String telephone, int salary, int age) {
+        id = idGenerator.getAndIncrement();
+
         this.fullName = fullName;
         this.position = position;
         this.telephone = telephone;
@@ -37,5 +45,9 @@ public class Employee {
 
     public void salaryIncrease (int amount) {
         this.salary += amount;
+    }
+
+    public int getId() {
+        return id;
     }
 }

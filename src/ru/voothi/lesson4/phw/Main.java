@@ -35,5 +35,12 @@ public class Main {
                 System.out.println(employeeArr1[i].getSalary());
             }
         }
+
+        System.out.println("~~~ Ex 7 ~~~");
+
+        for (int i = 0; i < employeeArr1.length; i++) {
+            System.out.println("fullName: " + employeeArr1[i].getFullName() + " id: " + employeeArr1[i].getId());
+        }
     }
 }
+
