@@ -3,6 +3,7 @@ package ru.voothi.lesson5.phw;
 public class Animal {
     protected int length;
     protected double hight;
+    protected int swimLength;
 
     public Animal() {
     }
@@ -12,12 +13,15 @@ public class Animal {
         this.hight = hight;
     }
 
-    public void run(int length) {
+    public void run(int lengthParam) {
+        length += lengthParam;
     }
 
-    public void swim(int length) {
+    public void swim(int swimLengthParam) {
+        swimLength += swimLengthParam;
     }
 
-    public void jump(double hight) {
+    public void jump(double hightParam) {
+        hight += hightParam;
     }
 }
