@@ -11,4 +11,8 @@ public class Dog extends Animal {
         super(length, hight);
         this.swimLength = swimLength;
     }
+
+    public void say() {
+        System.out.println("Пёсик пробежал " + length + " м");
+    }
 }

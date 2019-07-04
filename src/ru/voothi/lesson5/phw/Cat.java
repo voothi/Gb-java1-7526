@@ -4,4 +4,6 @@ public class Cat extends Animal {
     public Cat(int length, double hight) {
         super(length, hight);
     }
+
+
 }
