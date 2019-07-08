@@ -9,7 +9,10 @@ public class Main {
 
         try {
             FileInputStream fsi1 = new FileInputStream("TextFile1.txt");
-            int b = fsi1.read();
+            int b;
+            while ((b = fsi1.read()) != -1) {
+                System.out.print((char) b);
+            }
             System.out.println(b);
             fsi1.close();
         } catch (FileNotFoundException e) {

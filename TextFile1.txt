@@ -1,1 +1,1 @@
-Java — сильно типизированный объектно-ориентированный язык программирования.
+Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible.

@@ -1,1 +1,1 @@
-В настоящее время проект принадлежит OpenSource и распространяется по лицензии GPL.
+It is intended to let application developers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.
