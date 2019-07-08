@@ -5,12 +5,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        try {
-            Scanner scanner1 = new Scanner(new FileInputStream("TextFile1.txt"));
-            while (scanner1.hasNext()) {
-                System.out.println(scanner1.nextLine());
+        String str = "";
+
+       try {
+           FileInputStream fis1 = new FileInputStream("TextFile2.txt");
+           FileOutputStream fos1 = new FileOutputStream("TextFile1.txt");
+           Scanner scanner2 = new Scanner(fis1);
+            while (scanner2.hasNext()) {
+//                str += scanner2.nextLine();
+                fos1 = ;
             }
-            scanner1.close();
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
