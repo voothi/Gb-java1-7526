@@ -1,6 +1,7 @@
 package ru.voothi.lesson6.phw;
 
 import java.io.*;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,13 +9,11 @@ public class Main {
         OutputStream out;
 
         try {
-            FileInputStream fsi1 = new FileInputStream("TextFile1.txt");
-            int b;
-            while ((b = fsi1.read()) != -1) {
-                System.out.print((char) b);
+            Scanner scanner1 = new Scanner(new FileInputStream("TextFile1.txt"));
+            while (scanner1.hasNext()) {
+                System.out.println(scanner1.nextLine());
             }
-            System.out.println(b);
-            fsi1.close();
+            scanner1.close();
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
