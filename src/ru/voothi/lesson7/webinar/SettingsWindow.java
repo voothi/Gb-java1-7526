@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson_g.online;
+package ru.voothi.lesson7.webinar;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;

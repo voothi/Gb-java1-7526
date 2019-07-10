@@ -1,4 +1,4 @@
-package ru.geekbrains.lesson_f.home;
+package ru.voothi.lesson7.webinar;
 
 import java.io.File;
 import java.io.FileInputStream;
