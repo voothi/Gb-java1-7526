@@ -8,16 +8,17 @@ public class MyWindow extends JFrame {
         setTitle("Test Window");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setBounds(300, 300, 400, 400);
-        JButton[] jbs = new JButton[5];
-        for (int i = 0; i < jbs.length; i++) {
-            jbs[i] = new JButton("#" + i);
-        }
-        setLayout(new BorderLayout());
-        add(jbs[0], BorderLayout.EAST);
-        add(jbs[1], BorderLayout.WEST);
-        add(jbs[2], BorderLayout.SOUTH);
-        add(jbs[3], BorderLayout.NORTH);
-        add(jbs[4], BorderLayout.CENTER);
+        JButton button = new JButton("Button 1 (PAGE_START)");
+        add(button, BorderLayout.PAGE_START);
+        button = new JButton("Button 2 (CENTER)");
+        button.setPreferredSize(new Dimension(200, 100));
+        add(button, BorderLayout.CENTER);
+        button = new JButton("Button 3 (LINE_START)");
+        add(button, BorderLayout.LINE_START);
+        button = new JButton("Long-Named Button 4 (PAGE_END)");
+        add(button, BorderLayout.PAGE_END);
+        button = new JButton("5 (LINE_END)");
+        add(button, BorderLayout.LINE_END);
         setVisible(true);
     }
 }
