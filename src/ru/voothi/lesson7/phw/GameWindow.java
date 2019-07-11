@@ -1,6 +1,7 @@
 package ru.voothi.lesson7.phw;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class GameWindow extends JFrame {
 
@@ -19,8 +20,8 @@ public class GameWindow extends JFrame {
         JButton btnStartGame = new JButton("Start game");
         JButton btnExit = new JButton("Exit game");
 
-        add(btnStartGame);
-        add(btnExit);
+        add(btnStartGame, BorderLayout.NORTH);
+        add(btnExit, BorderLayout.SOUTH);
 
         setVisible(true);
     }
