@@ -20,6 +20,7 @@ public class GameWindow extends JFrame {
         JButton btnStartGame = new JButton("Start game");
         JButton btnExit = new JButton("Exit game");
 
+        setLayout(new GridLayout(2, 2));
         add(btnStartGame, BorderLayout.NORTH);
         add(btnExit, BorderLayout.SOUTH);
 
