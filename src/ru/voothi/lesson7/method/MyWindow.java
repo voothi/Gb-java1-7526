@@ -5,18 +5,20 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class MyWindow extends JFrame {
     public MyWindow() {
         setBounds(500, 500, 400, 300);
         setTitle("Demo");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        JTextField field = new JTextField();
-        add(field);
-        field.addActionListener(new ActionListener() {
+        JPanel pan = new JPanel();
+        add(pan);
+        pan.addMouseListener(new MouseAdapter() {
             @Override
-            public void actionPerformed(ActionEvent e) {
-                System.out.println("Your message: " + field.getText());
+            public void mouseReleased(MouseEvent e) {
+                System.out.println("MousePos: " + e.getX() + " " + e.getY());
             }
         });
         setVisible(true);
