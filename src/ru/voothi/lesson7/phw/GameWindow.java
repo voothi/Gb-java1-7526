@@ -20,6 +20,7 @@ public class GameWindow extends JFrame {
         JButton btnExit = new JButton("Exit game");
 
         add(btnStartGame);
+        add(btnExit);
 
         setVisible(true);
     }
